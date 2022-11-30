@@ -131,7 +131,7 @@ namespace SeleniumAdvanced_HomeTask_PageObject.PageObjects
             IJavaScriptExecutor jsExecutor = (IJavaScriptExecutor)WebDriver.GetInstance();
 
             jsExecutor.ExecuteScript("arguments[0].setAttribute('style', 'border:2px solid red; background:yellow')", UserID);
-            //baseClass.closeBrowser();
+            baseClass.closeBrowser();
         }
     }
 }
